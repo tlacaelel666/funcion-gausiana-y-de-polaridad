@@ -1,6 +1,6 @@
-# PGP (Polaridad Gravitacional Primordial): Descripción Técnica
+# PGP (Polaridad Gravitacional Postulada): Descripción Técnica
 ## ·Definición Fundamental
-La Polaridad Gravitacional Primordial (PGP) es un marco teórico que postula que el universo se
+La Polaridad Gravitacional es un marco teórico que postula que el universo se
 fundamenta en repulsiones-vibraciones persistentes a velocidades extremas, siendo estas la
 ### manifestación directa de E=mc2 a nivel primordial.
 ## Principios Centrales
@@ -56,7 +56,7 @@ Proceso de Materialización
 
 ### Características Distintivas
 1. E=mc2 como Ley Fundamental: No derivada, sino principio rector de conversión vibración-masa
-2. Gravitación Cuántica Intrínseca: Efectos gravitacionales emergen naturalmente a escala cuántica
+2. Gravitación Cuántica Intrínseca: Efectos gravitacionales emergen naturalmente a escala cuántica en la distribucion del Hamiltoniano
 3. Vacío Activo: Espacio como medio dinámico, no inerte
 4. Coherencia Determinista: Masificación por sincronización frecuencial, no aleatoria
 5. Polaridad Conservada: Propiedades masa-gravedad distribuidas pero conservadas
@@ -86,3 +86,4 @@ Masa Propiedad intrínseca Emergente por coherencia
 Decoherencia Ruido ambiental Distribución gravitacional
 E=mc2 Consecuencia relativista Ley fundamental primordial
 Gravitación cuántica Problema abierto Intrínseca al formalismo
+propuesta para una ecuacion de gravedad mlamdaD = ec donde la mlambdD es la masa distriuida es igual al minimo de energia de la velocidad de la luz constante
