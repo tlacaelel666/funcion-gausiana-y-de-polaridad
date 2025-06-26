@@ -1,713 +1,449 @@
-\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Postulado de la Polaridad Gravitacional Probabilística
+% Autor: Jacobo Tlacaelel Mina Rodríguez
+% Fecha: \today
+% Formato -> Gemini IA 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt, a4paper]{article}
+
+% --- PAQUETES BÁSICOS ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{xcolor}
-\usepackage{listings}
-\begin{document}
-\title{Postulado de la polaridad gravitacional probabilística}
-\author{Jacobo Tlacaelel Mina Rodríguez}
-\date{June 2025}
-\maketitle
+\usepackage[spanish]{babel}
+\usepackage[margin=2.5cm]{geometry}
 
-\lstdefinelanguage{json}{
+% --- PAQUETES DE MATEMÁTICAS Y FÍSICA ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics} % Provee \vb, \grad, \div, \curl, \ket, \bra, \pdv, \abs, etc.
+\usepackage{bm}      % Para símbolos matemáticos en negrita (\bm)
+
+% --- PAQUETES DE ESTILO Y DISEÑO ---
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings} % Para bloques de código
+\usepackage{caption}  % Mejor control sobre las captions
+\usepackage{enumitem} % Para personalizar listas
+
+% --- PAQUETES DE HIPERVÍNCULOS ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=teal,
+    urlcolor=blue!80!black,
+    citecolor=green!50!black,
+    pdftitle={Postulado de la Polaridad Gravitacional Probabilística con Análisis Topológico-Evolutivo},
+    pdfauthor={Jacobo Tlacaelel Mina Rodríguez},
+    pdfkeywords={PGP, física teórica, gravedad cuántica, topología, cosmología},
+    bookmarks=true,
+    bookmarksopen=true,
+}
+
+% --- DEFINICIONES DE ESTILOS PARA LISTINGS (CÓDIGO) ---
+\lstdefinestyle{mypythonstyle}{
+    language=Python,
     basicstyle=\small\ttfamily,
-    numbers=left,
-    numberstyle=\tiny,
-    stepnumber=1,
-    numbersep=5pt,
+    keywordstyle=\color{blue!80!black}\bfseries,
+    stringstyle=\color{red!80!black},
+    commentstyle=\color{green!60!black}\itshape,
     showstringspaces=false,
     breaklines=true,
-    frame=single,
+    frame=tb,
     backgroundcolor=\color{gray!10},
-    literate=
-     *{0}{{{\color{blue}0}}}{1}
-      {1}{{{\color{blue}1}}}{1}
-      {2}{{{\color{blue}2}}}{1}
-      {3}{{{\color{blue}3}}}{1}
-      {4}{{{\color{blue}4}}}{1}
-      {5}{{{\color{blue}5}}}{1}
-      {6}{{{\color{blue}6}}}{1}
-      {7}{{{\color{blue}7}}}{1}
-      {8}{{{\color{blue}8}}}{1}
-      {9}{{{\color{blue}9}}}{1}
-      {:}{{{\color{red}:}}}{1}
-      {,}{{{\color{red},}}}{1}
-      {"}{{{\color{black}"}}}{1}
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    tabsize=4,
+    captionpos=b, % Poner la caption debajo del listado
+    aboveskip=1.5\baselineskip,
+    belowskip=1.5\baselineskip,
 }
+\lstset{style=mypythonstyle} % Aplicar el estilo por defecto
 
-{
-  "metadatos": {
-    "titulo": "Postulado de la Polaridad Gravitacional Probabilística con Análisis Topológico-Evolutivo",
-    "autor": "Jacobo Tlacaelel Mina Rodríguez",
-    "fecha": "Variable, según la compilación (\\today)"
-  },
-  "estructura_documento": [
-    {
-      "tipo": "seccion",
-      "titulo": "Resumen",
-      "contenido": "Se postula la Polaridad Gravitacional Probabilística. En la frontera de la física, nos encontramos hoy ante un enigma profundo: ¿Cómo unificamos la mecánica cuántica que rige lo infinitamente pequeño con la gravedad que moldea el cosmos? Pero antes de eso, ¿qué es la masa? Las teorías actuales nos han llevado lejos, pero persisten las fisuras, los \"ruidos\" y las anomalías que señalan hacia una comprensión incompleta de la realidad. Se propone una reinterpretación radical, aunque dentro de un mismo marco: el universo no se construye sobre partículas fundamentales estáticas, sino sobre algo que identificamos como repulsión-vibración persistente a una velocidad inimaginable, que interpretamos como cuerdas, excitaciones, cuasi-partículas. Esta no es una fuerza en el sentido clásico, sino la dinámica primordial que \"llena\" el vacío cuántico, dándole una cualidad que llamamos \"des-polarización\". Este vacío no es inerte; es un medio vibrante, adaptable y extraordinariamente rico que, al influenciarse y masificar su frecuencia, entra en una cohesión despolarizada, estando en la misma frecuencia de onda. Al sumar excitaciones y actuar de manera coherente, logran una interacción con el campo de Higgs, compactando en una masa efectiva en un punto particular, lo que conocemos como onda-partícula. La polarización como onda toma en cuenta el conjunto de excitaciones, y la partícula es la suma total en un punto, dando origen a lo que identificamos como un electrón. Cuando en un qubit (visto como un electrón) se aplica una puerta H (Hadamard), se sabe que lo coloca en superposición y distribuye el Hamiltoniano en un ideal 50%-50% para 0 y 1. Sin embargo, se atribuye al ruido una asimetría que distorsiona la pureza. Este postulado interpreta esta asimetría como una distribución gravitacional ejercida sobre el Hamiltoniano, ya que sabiendo que el Hamiltoniano representa la Energía y E=mc², estamos ante el proceso de transformación energía-materia. La distribución de la masa está regida por un centro de gravedad, análogo a un imán que al dividirse, su polaridad se distribuye en cada parte: un cuerpo se divide y mantiene su polaridad Masa-Gravedad (M-G). A mayor masa, mayor alcance de rango en el umbral gravitacional. Esto se observa desde un átomo de hidrógeno hasta un agujero negro, entendiendo la curva como una distorsión de probabilidad determinada en un umbral polarizado, donde la segunda ley de la termodinámica se reinterpreta en términos de umbrales polarizados. El ejemplo de la Supernova Refsdal, con sus imágenes múltiples y retardadas, se presenta como evidencia de cómo el tejido probabilístico polarizado del vacío reconfigura las trayectorias de la luz, actuando como una \"lente de probabilidad\" cósmica. La persistencia de esta polaridad sugiere una ley subyacente que rige la emergencia y distribución de la masa-gravedad. Se propone un cambio de paradigma: la realidad fundamental es una danza de polarizaciones y despolarizaciones, un flujo constante de información. La estabilidad de un átomo, la trayectoria de una galaxia o el destino del universo podrían ser el eco coherente de la eterna repulsión-vibración del vacío, manifestándose como la polaridad fundamental que rige todo."
-    },
-    {
-      "tipo": "seccion",
-      "titulo": "Fundamentos de la Polaridad Gravitacional Probabilística (PGP)",
-      "contenido": [
-        {
-          "tipo": "parrafo",
-          "texto": "La PGP se fundamenta en la repulsión-vibración persistente como la dinámica primordial que da forma a la realidad."
-        },
-        {
-          "tipo": "lista",
-          "items": [
-            "$M_{\\text{repul}}(\\mathbf{r})$ es la función de repulsión espacial.",
-            "$E_0 = mc^2$ conecta directamente con la equivalencia masa-energía."
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Vacío Cuántico como Medio Vibrante",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "El vacío no es inerte, sino un medio vibrante, adaptable y extraordinariamente rico con cualidades de \"despolarización\"."
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Susceptibilidad Vibratoria del Vacío",
-              "contenido": [
-                {
-                  "tipo": "ecuacion",
-                  "latex": "\\chi_{\\text{vib}}(\\mathbf{r}) = \\chi_0 \\left(1 + \\sum_n A_n \\cos(\\omega_n t + \\phi_n)\\right)"
-                }
-              ]
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Campo de Respuesta Vibratoria",
-              "contenido": [
-                {
-                  "tipo": "ecuacion",
-                  "latex": "G_{\\text{vib}}(\\mathbf{r}) = G_0 \\cdot \\mathcal{R}_{\\text{vib}}(\\mathbf{r},t) \\cdot \\exp\\left(-\\frac{\\abs{\\mathbf{r}}^2}{2\\sigma_{\\text{vib}}^2}\\right)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Coherencia Despolarizada y Masificación",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "Cuando las excitaciones influencian y masifican su frecuencia, entran en cohesión despolarizada - misma frecuencia de onda."
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Condición de Coherencia Despolarizada",
-              "contenido": [
-                {
-                  "tipo": "ecuacion",
-                  "latex": "\\omega_{\\text{exc},i} = \\omega_{\\text{exc},j} = \\omega_{\\text{coherente}} \\quad \\forall i,j"
-                }
-              ]
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Función de Masificación por Coherencia",
-              "contenido": [
-                {
-                  "tipo": "ecuacion",
-                  "latex": "m_{\\text{eff}}(\\mathbf{r}) = \\frac{\\hbar\\omega_{\\text{coherente}}}{c^2} \\cdot \\abs{\\Psi_{\\text{coherente}}(\\mathbf{r})}^2"
-                },
-                {
-                  "tipo": "parrafo",
-                  "texto": "Esta es la materialización directa de E=mc² donde:"
-                },
-                {
-                  "tipo": "lista",
-                  "items": [
-                    "$E = \\hbar\\omega_{\\text{coherente}}$ (energía de las vibraciones coherentes).",
-                    "$m_{\\text{eff}}$ es la masa efectiva emergente.",
-                    "$c^2$ es el factor de conversión energía-masa."
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Interacción con el Campo de Higgs",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "La masificación coherente interactúa con el Campo de Higgs para compactar la masa en un punto, creando la dualidad onda-partícula que observamos."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tipo": "seccion",
-      "titulo": "Ecuación Maestra Topológico-Evolutiva",
-      "contenido": [
-        {
-          "tipo": "parrafo",
-          "texto": "La evolución de la densidad de probabilidad ρ(r,t) de las excitaciones del sistema se describe mediante una ecuación maestra generalizada, que integra difusión, transporte, fuentes/sumideros, forzamiento topológico y ruido estocástico. Esta ecuación es el núcleo dinámico que rige la interacción de las \"excitaciones\" con el vacío polarizable y sus propiedades topológicas inherentes."
-        },
-        {
-          "tipo": "ecuacion",
-          "latex": "\\frac{\\partial\\rho}{\\partial t}=\\nabla\\cdot(\\mathbf{D}\\nabla\\rho)-\\nabla\\cdot(\\rho\\bvec{v})+S(\\rho,\\nabla\\rho)+\\Gamma_{\\text{topo}}(H,\\chi_E,K_{\\text{gauss}})+\\eta_{\\text{bayes}}"
-        },
-        {
-          "tipo": "lista_componentes",
-          "titulo": "Componentes de la Ecuación Maestra",
-          "componentes": [
-            {
-              "nombre": "Tensor de Difusión Adaptativo (D)",
-              "descripcion": "Un tensor de difusión que no es constante, sino que se adapta localmente en función de la distancia de Mahalanobis de la densidad de probabilidad a una referencia, permitiendo que la difusión varíe en regiones de interés topológico o gravitacional.",
-              "ecuacion": "\\mathbf{D}=D_0+\\alpha\\exp(-\\sigma^2d_M^2(\\nabla\\rho,\\boldsymbol{\\mu}_{\\text{ref}}))",
-              "explicacion_parametros": "Donde D₀ es un coeficiente de difusión base, α es un factor de modulación, ∇ρ es el gradiente de la densidad de probabilidad, μ_ref es un vector de referencia que define la región de interés o un estado de polarización deseado, y σ es un parámetro de escala."
-            },
-            {
-              "nombre": "Campo de Velocidad Topológica (v)",
-              "descripcion": "Describe el flujo de la densidad de probabilidad a través del espacio-tiempo, influenciado por potenciales escalares y topológicos.",
-              "ecuacion": "\\bvec{v}=-\\nabla(\\phi+\\psi_{\\text{topo}})",
-              "explicacion_parametros": "Donde φ es un potencial escalar genérico (e.g., relacionado con U_MG) y ψ_topo es un potencial que emerge de las propiedades topológicas del espacio-tiempo."
-            },
-            {
-              "nombre": "Término Fuente/Sumidero (S(ρ,∇ρ))",
-              "descripcion": "Representa procesos locales de creación o aniquilación de \"excitaciones\", pudiendo depender de la densidad y sus gradientes. La forma explícita dependerá de los procesos específicos de intermasificación o despolarización."
-            },
-            {
-              "nombre": "Forzamiento Topológico (Γ_topo(H,χ_E,K_gauss))",
-              "descripcion": "Un término que introduce una influencia directa de las propiedades geométricas y topológicas del espacio en la evolución de la densidad de probabilidad.",
-              "ecuacion": "\\Gamma_{\\text{topo}}(H,\\chi_E)=\\beta_1\\Delta H+\\beta_2\\Delta\\chi_E+\\beta_3 K_{\\text{gauss}}",
-              "explicacion_parametros": "Donde H es la Curvatura Media, χ_E es la Característica de Euler-Poincaré, y K_gauss es la Curvatura Gaussiana. β₁, β₂, β₃ son los pesos de forzamiento topológico."
-            },
-            {
-              "nombre": "Ruido Bayesiano (η_bayes)",
-              "descripcion": "Un término estocástico que modela las fluctuaciones inherentes del vacío cuántico y las incertidumbres en la observación, siguiendo una distribución normal multivariada.",
-              "ecuacion": "\\eta_{\\text{bayes}}\\sim\\mathcal{N}(0,\\Sigma_M^{-1})",
-              "explicacion_parametros": "Donde Σ_M es la matriz de covarianza de la distancia de Mahalanobis."
-            },
-            {
-              "nombre": "Distancia de Mahalanobis (d_M²(x,μ))",
-              "descripcion": "Una medida de distancia que tiene en cuenta la covarianza de los datos, utilizada aquí para evaluar la similitud entre estados de polarización o densidades de probabilidad.",
-              "ecuacion": "d_M^2(\\mathbf{x},\\boldsymbol{\\mu})=(\\mathbf{x}-\\boldsymbol{\\mu})^{\\top}\\Sigma^{-1}(\\mathbf{x}-\\boldsymbol{\\mu})",
-              "explicacion_parametros": "Donde x es un vector de observación, μ es el vector de la media de referencia, y Σ es la matriz de covarianza."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tipo": "seccion",
-      "titulo": "Lagrangiano Integrado de la PGP-Topológica",
-      "contenido": [
-        {
-          "tipo": "parrafo",
-          "texto": "El Lagrangiano de densidad total L_total es la función fundamental de la cual se derivan las ecuaciones de campo y la dinámica conservativa del sistema a través del Principio de Mínima Acción."
-        },
-        {
-          "tipo": "ecuacion",
-          "latex": "\\mathcal{L}_{\\text{total}}=\\mathcal{L}_{\\text{PGP}}+\\mathcal{L}_{\\text{topo}}+\\mathcal{L}_{\\text{bayes}}+\\mathcal{L}_{\\text{mahal}}"
-        },
-        {
-          "tipo": "lista_componentes",
-          "titulo": "Componentes del Lagrangiano",
-          "componentes": [
-            {
-              "nombre": "Lagrangiano Base PGP (L_PGP)",
-              "descripcion": "Comprende los términos fundamentales de la teoría de la Polaridad Gravitacional Cuántica.",
-              "subcomponentes": [
-                {
-                  "nombre": "L_partícula/excitación",
-                  "descripcion": "Describe la dinámica de las excitaciones/partículas (Ψ), incluyendo la masa emergente dependiente de los campos del vacío.",
-                  "ecuacion": "\\mathcal{L}_{\\text{partícula/excitación}}=(\\partial_\\mu\\Psi^*)\\left(\\frac{1}{\\Lambda^2\\chi G_v}\\right)(\\partial^\\mu\\Psi)-U_{\\text{MG}}\\abs{\\Psi}^2-\\ldots"
-                },
-                {
-                  "nombre": "L_vacío",
-                  "descripcion": "Describe la dinámica intrínseca de los campos fundamentales del vacío polarizable: χ(r), G_v(r), y B_eff(r).",
-                  "ecuacion": "\\mathcal{L}_\\chi=\\frac{1}{2}(\\partial_\\mu\\chi)(\\partial^\\mu\\chi)-V(\\chi,G_v,\\ldots)"
-                },
-                {
-                  "nombre": "L_EM",
-                  "descripcion": "Formaliza la dinámica de los campos electromagnéticos, donde las propiedades del medio (ε(r,t) y μ(r,t)) son campos dinámicos acoplados al vacío.",
-                  "ecuacion": "\\mathcal{L}_{\\text{EM}}=-\\frac{1}{4}F_{\\mu\\nu}F^{\\mu\\nu}-J^\\mu A_\\mu+\\mathcal{L}_{\\text{medio-interacción}}"
-                },
-                {
-                  "nombre": "L_acoplamiento",
-                  "descripcion": "Contiene los términos que describen cómo los campos interactúan para generar la emergencia de masa y otras propiedades.",
-                  "ecuacion": "-\\frac{1}{2}(\\Lambda^2\\chi G_v)\\abs{\\Psi}^2"
-                }
-              ]
-            },
-            {
-              "nombre": "Término Topológico (L_topo)",
-              "descripcion": "Acopla la dinámica de los campos del vacío con las propiedades topológicas y geométricas del espacio.",
-              "ecuacion": "\\mathcal{L}_{\\text{topo}}=\\frac{1}{2}\\gamma_1(\\nabla H)^2+\\frac{1}{2}\\gamma_2(\\nabla\\chi_E)^2+V_{\\text{topo}}(H,\\chi_E,K_{\\text{gauss}})"
-            },
-            {
-              "nombre": "Término Bayesiano (L_bayes)",
-              "descripcion": "Incorpora una penalización basada en la verosimilitud de las desviaciones de los campos o parámetros del sistema respecto a sus valores esperados.",
-              "ecuacion": "\\mathcal{L}_{\\text{bayes}}=-\\frac{1}{2}\\log\\abs{\\Sigma_M}-\\frac{1}{2}(\\boldsymbol{\\phi}-\\boldsymbol{\\mu})^{\\top}\\Sigma_M^{-1}(\\boldsymbol{\\phi}-\\boldsymbol{\\mu})"
-            },
-            {
-              "nombre": "Acoplamiento de Mahalanobis (L_mahal)",
-              "descripcion": "Un término que directamente penaliza (o favorece) las desviaciones de los datos o estados del sistema con respecto a un modelo o una referencia.",
-              "ecuacion": "\\mathcal{L}_{\\text{mahal}}=-\\lambda_{\\text{mahal}}\\sum_i d_M^2(\\mathbf{y}_i,f(\\mathbf{x}_i;\\boldsymbol{\\theta}))"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tipo": "seccion",
-      "titulo": "Funciones y Conceptos Fundamentales",
-      "contenido": [
-        {
-          "tipo": "subseccion",
-          "titulo": "La Función de Onda Gaussiana",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "La función Gaussiana unidimensional se define como:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "f(x) = A \\exp\\left(-\\frac{(x - \\mu)^2}{2\\sigma^2}\\right)",
-              "label": "eq:gaussiana1D",
-              "explicacion_parametros": "Donde A representa la amplitud, μ indica la media (o el centro), y σ designa la desviación estándar."
-            },
-            {
-              "tipo": "parrafo",
-              "texto": "La Gaussiana bidimensional (circular) se usa para describir distribuciones de intensidad en una superficie:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "G(x, y) = A \\exp\\left(-\\frac{(x - \\mu_x)^2 + (y - \\mu_y)^2}{2\\sigma^2}\\right)",
-              "label": "eq:gaussiana2D",
-              "explicacion_parametros": "Aquí, (μₓ, μᵧ) es el centro del pico y σ controla el ancho en ambas dimensiones."
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Superposición de un Estado en una Base Ortonormal",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "En la mecánica cuántica, un estado arbitrario |ψ⟩ puede ser expresado como una superposición lineal de los vectores de una base ortonormal completa {|uⱼ⟩}:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "\\ket{\\psi} = \\sum_{j} c_j \\ket{u_j}",
-              "label": "eq:superposicion_general",
-              "explicacion_parametros": "Donde cⱼ = ⟨uⱼ|ψ⟩ son los coeficientes de amplitud complejos. La probabilidad de medir el resultado asociado a |uⱼ⟩ es P(uⱼ) = |cⱼ|²."
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Ejemplo: Superposición de un Qubit",
-              "contenido": [
-                {
-                  "tipo": "parrafo",
-                  "texto": "Un qubit en un estado genérico |ψ⟩ en la base computacional {|0⟩, |1⟩} se escribe como:"
-                },
-                {
-                  "tipo": "ecuacion",
-                  "latex": "\\ket{\\psi} = \\alpha \\ket{0} + \\beta \\ket{1}",
-                  "label": "eq:qubit_superposicion",
-                  "explicacion_parametros": "donde |α|² + |β|² = 1."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Permitividad y Permeabilidad: Propiedades del Espacio-Medio",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "La permitividad eléctrica (ε) y la permeabilidad magnética (μ) describen cómo un medio interactúa con los campos eléctricos y magnéticos. En el vacío, sus valores son ε₀ y μ₀. La velocidad de una onda electromagnética en un medio es v = 1/√(με). En el vacío, esta velocidad es la velocidad de la luz, c = 1/√(μ₀ε₀)."
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Modelo de Kuramoto: Sincronización y Coherencia en Excitaciones",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "El Modelo de Kuramoto describe cómo una población de N osciladores acoplados puede sincronizarse. La evolución de la fase θᵢ de cada oscilador es:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^{N} \\sin(\\theta_j - \\theta_i)",
-              "label": "eq:kuramoto_main",
-              "explicacion_parametros": "Donde ωᵢ es su frecuencia natural y K es la fuerza de acoplamiento. El grado de sincronización se mide con el parámetro de orden r(t)e^(iΨ(t)) = (1/N) Σ e^(iθⱼ(t))."
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Ecuación de Continuidad y Potencial Cuántico",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "En la formulación hidrodinámica de la mecánica cuántica, la ecuación de Schrödinger se descompone en una ecuación de continuidad para la densidad de probabilidad ρ = |Ψ|²:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "\\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot \\mathbf{J} = 0",
-              "label": "eq:continuity_quantum"
-            },
-            {
-              "tipo": "parrafo",
-              "texto": "y una ecuación de Euler cuántica que describe el flujo de un \"fluido de probabilidad\", gobernado por el potencial clásico V y un Potencial Cuántico Q:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "Q(\\mathbf{r}, t) = -\\frac{\\hbar^2}{2m} \\frac{\\nabla^2 A}{A}",
-              "label": "eq:quantum_potential",
-              "explicacion_parametros": "donde A es la amplitud de la función de onda Ψ = A e^(iS/ħ)."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tipo": "seccion",
-      "titulo": "Modelado de la Polarización en el Marco PGP",
-      "contenido": [
-        {
-          "tipo": "subseccion",
-          "titulo": "Adaptación de las Ecuaciones de Maxwell para la Polaridad Gravitacional Cuántica",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "Postulamos que ε y μ no son escalares, sino tensores de segundo rango ε(r,t) y μ(r,t), que dependen de la polarización del vacío. Las relaciones constitutivas se vuelven D = ε·E y H = μ⁻¹·B. Las ecuaciones de Maxwell en su forma general se mantienen:"
-            },
-            {
-              "tipo": "ecuacion_grupo",
-              "ecuaciones": [
-                {
-                  "latex": "\\nabla \\cdot \\bvec{D} = \\rho_f",
-                  "label": "eq:maxwell_gauss_E"
-                },
-                {
-                  "latex": "\\nabla \\cdot \\bvec{B} = 0",
-                  "label": "eq:maxwell_gauss_B"
-                },
-                {
-                  "latex": "\\nabla \\times \\bvec{E} = - \\frac{\\partial \\bvec{B}}{\\partial t}",
-                  "label": "eq:maxwell_faraday"
-                },
-                {
-                  "latex": "\\nabla \\times \\bvec{H} = \\bvec{J}_f + \\frac{\\partial \\bvec{D}}{\\partial t}",
-                  "label": "eq:maxwell_ampere"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Ecuación de Ginzburg-Landau para la Transición de Polarización",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "Para modelar la emergencia de la polarización, usamos un parámetro de orden complejo Ψ(r,t) cuya evolución sigue la ecuación de Ginzburg-Landau:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "\\pdv{\\Psi}{t} = \\alpha \\Psi - \\beta \\abs{\\Psi}^2 \\Psi + D \\nabla^2 \\Psi",
-              "label": "eq:ginzburg_landau",
-              "explicacion_parametros": "Cuando el coeficiente α se vuelve positivo, el estado desordenado (Ψ=0) se vuelve inestable, dando lugar a un estado polarizado (Ψ≠0)."
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Tiempo de Recorrido de la Luz en un Vacío Polarizable",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "El tiempo de recorrido Tₗ de la luz a lo largo de un camino L en un vacío con un índice de refracción efectivo n(r) es:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "T_L = \\int_{L} \\frac{n(\\mathbf{r})}{c} ds",
-              "label": "eq:light_travel_time"
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Evolución de la Polarización de la Luz",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "El cambio en una propiedad de polarización de la luz, Δ_pol, depende de un parámetro de masa-gravedad P_MG(r) a lo largo del camino:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "\\Delta_{\\text{pol}} = \\Delta_0 + \\int_{L} f(P_{\\text{MG}}(\\mathbf{r})) ds",
-              "label": "eq:polarization_evolution"
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Parámetro de Masa-Gravedad y Potencial Efectivo",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "Definimos un Parámetro de Masa-Gravedad P_MG que emerge de los gradientes en la polarización del vacío (representada por n(r)):"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "\\bvec{P}_{\\text{MG}}(\\mathbf{r}) = \\chi(\\mathbf{r}) \\cdot \\hat{\\bvec{n}}(\\mathbf{r}) = \\chi(\\mathbf{r}) \\frac{\\nabla n(\\mathbf{r})}{\\abs{\\nabla n(\\mathbf{r})}}",
-              "label": "eq:pmg_definition"
-            },
-            {
-              "tipo": "parrafo",
-              "texto": "Este parámetro interactúa con un campo efectivo B_eff(r) para generar un Potencial Efectivo de Masa-Gravedad U_MG:"
-            },
-            {
-              "tipo": "ecuacion",
-              "latex": "U_{\\text{MG}}(\\mathbf{r}) = \\bvec{P}_{\\text{MG}}(\\mathbf{r}) \\cdot \\bvec{B}_{\\text{eff}}(\\mathbf{r})",
-              "label": "eq:umg_definition"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tipo": "seccion",
-      "titulo": "Método Numérico de Flujo Laminar de Información para la Teoría PGP",
-      "contenido": [
-        {
-          "tipo": "subseccion",
-          "titulo": "Conceptualización del Flujo Laminar de Información",
-          "contenido": [
-            {
-              "tipo": "subsubsection",
-              "titulo": "Analogía Física Fundamental",
-              "contenido": [
-                {
-                  "tipo": "parrafo",
-                  "texto": "En mecánica de fluidos, un flujo laminar se caracteriza por capas ordenadas que se deslizan sin mezclarse, gradientes suaves y conservación de momentum. En PGP, mapeamos esto a capas de información cuántica con diferentes niveles de coherencia y gradientes suaves en los campos del vacío."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Implementación del Método de Flujo Laminar",
-          "contenido": [
-            {
-              "tipo": "subsubsection",
-              "titulo": "Discretización Espacial Adaptativa Inspirada en CFD",
-              "contenido": [
-                {
-                  "tipo": "pseudocodigo",
-                  "titulo": "Pseudocódigo conceptual",
-                  "lenguaje": "python-like",
-                  "codigo": "class LaminarInfoFlow:\n    def __init__(self):\n        self.layers = self.initialize_info_layers()\n        self.streamlines = self.define_quantum_streamlines()\n        self.viscosity_tensor = self.compute_quantum_viscosity()\n\n    def adaptive_mesh_refinement(self, field_gradients):\n        \"\"\"Refinamiento adaptativo basado en gradientes.\"\"\"\n        high_gradient_regions = self.detect_sharp_transitions(field_gradients)\n        return self.refine_mesh(high_gradient_regions)"
-                }
-              ]
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Integración Temporal Cuántica con Dinámica de Fluidos",
-              "contenido": [
-                {
-                  "tipo": "ecuacion",
-                  "titulo": "Ecuación de Navier-Stokes Cuántica Modificada",
-                  "latex": "\\frac{\\partial\\psi}{\\partial t} + (\\bvec{v}_{\\text{quantum}} \\cdot \\nabla)\\psi = -\n    \\left(\\frac{i}{\\hbar}\\right)\\hat{H}_{\\text{eff}} \\psi + \\nu_{\\text{quantum}} \\nabla^2\\psi + S_{\\text{lindblad}}",
-                  "explicacion_parametros": "Donde v_quantum es la velocidad del flujo de información, ν_quantum es la viscosidad cuántica y S_lindblad es el término de decoherencia."
-                },
-                {
-                  "tipo": "pseudocodigo",
-                  "titulo": "Esquema de Integración IMEX (Implícito-Explícito)",
-                  "lenguaje": "python-like",
-                  "codigo": "def integrate_quantum_flow(self, dt):\n    \"\"\"Integrador IMEX para flujo laminar cuántico.\"\"\"\n    # Paso explícito para evolución unitaria\n    psi_intermediate = self.evolve_hamiltonian_explicit(dt)\n    # Paso implícito para decoherencia Lindblad\n    psi_new = self.evolve_lindblad_implicit(psi_intermediate, dt)\n    return self.apply_flow_constraints(psi_new)"
-                }
-              ]
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Algoritmos Bayesianos con Dinámicas de Flujo",
-              "contenido": [
-                {
-                  "tipo": "pseudocodigo",
-                  "titulo": "Filtro de Partículas con Flujo Laminar",
-                  "lenguaje": "python-like",
-                  "codigo": "class QuantumFlowParticleFilter:\n    def predict_step(self, dt):\n        \"\"\"Propagación de partículas siguiendo líneas de corriente.\"\"\"\n        for particle in self.particles:\n            particle.state = self.advect_along_streamline(particle.state, dt)\n            particle.weight *= self.compute_flow_likelihood(particle.state)\n\n    def update_step(self, observations):\n        \"\"\"Actualización bayesiana manteniendo continuidad del flujo.\"\"\"\n        likelihoods = self.compute_observation_likelihoods(observations)\n        self.streamline_weights *= likelihoods\n        self.resample_if_needed()"
-                }
-              ]
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Optimización con Dinámica de Fluidos",
-              "contenido": [
-                {
-                  "tipo": "pseudocodigo",
-                  "titulo": "Gradiente Descendente Guiado por Flujo",
-                  "lenguaje": "python-like",
-                  "codigo": "def flow_guided_optimization(self, action_functional):\n    \"\"\"Optimización que sigue líneas de menor resistencia.\"\"\"\n    current_state = self.initial_guess\n    flow_velocity = self.compute_optimization_flow(current_state)\n    while not self.converged():\n        classical_gradient = self.compute_gradient(...)\n        flow_correction = self.apply_streamline_dynamics(...)\n        current_state = self.update_with_flow_stability(...)\n        flow_velocity = self.evolve_flow_velocity(...)"
-                }
-              ]
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "FFT Adaptada al Flujo Laminar",
-              "contenido": [
-                {
-                  "tipo": "pseudocodigo",
-                  "titulo": "Transformada de Fourier en Coordenadas de Flujo",
-                  "lenguaje": "python-like",
-                  "codigo": "def flow_adapted_fft(self, field_data, streamline_coords):\n    \"\"\"FFT que respeta la geometría de las líneas de corriente.\"\"\"\n    flow_coords = self.map_to_streamline_coordinates(streamline_coords)\n    fourier_flow = np.fft.fftn(field_data, axes=flow_coords)\n    spectral_patterns = self.analyze_flow_patterns(fourier_flow)\n    return self.extract_masification_signatures(spectral_patterns)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Ventajas del Enfoque de Flujo Laminar",
-          "contenido": [
-            {
-              "tipo": "lista_numerada",
-              "items": [
-                "Estabilidad Numérica Natural: Condición CFL automática, disipación controlada y conservación de invariantes.",
-                "Eficiencia Computacional: Paralelización natural, adaptatividad automática y convergencia acelerada.",
-                "Preservación de Propiedades Físicas: Causalidad, unitariedad y localidad se preservan por construcción."
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Implementación Práctica Específica para PGP",
-          "contenido": [
-            {
-              "tipo": "subsubsection",
-              "titulo": "Algoritmo Principal en Python",
-              "contenido": [
-                {
-                  "tipo": "pseudocodigo",
-                  "lenguaje": "python-like",
-                  "codigo": "class PGPFluidSolver:\n    def __init__(self, domain, initial_conditions):\n        self.domain = domain\n        self.psi_field = initial_conditions['wavefunction']\n        # ... inicializar otros campos\n\n    def evolve_system(self, t_final, dt):\n        \"\"\"Evolución completa del sistema PGP con flujo laminar.\"\"\"\n        t = 0\n        while t < t_final:\n            # 1. Actualizar campos de flujo\n            self.update_flow_velocity()\n            # 2. Evolución hamiltoniana siguiendo líneas de corriente\n            self.evolve_hamiltonian_along_streamlines(dt)\n            # 3. Aplicar decoherencia\n            self.apply_lindblad_with_flow_conservation(dt)\n            # 4. Actualizar campos auxiliares\n            self.update_auxiliary_fields(dt)\n            # 5. Refinar malla si es necesario\n            if self.needs_refinement():\n                self.refine_mesh_following_flow()\n            t += dt\n        return self.extract_physical_quantities()"
-                }
-              ]
-            },
-            {
-              "tipo": "subsubsection",
-              "titulo": "Métricas de Calidad del Flujo",
-              "contenido": [
-                {
-                  "tipo": "pseudocodigo",
-                  "lenguaje": "python-like",
-                  "codigo": "def compute_flow_quality_metrics(self):\n    \"\"\"Métricas para validar la calidad del flujo laminar.\"\"\"\n    reynolds_quantum = self.compute_quantum_reynolds_number()\n    streamline_coherence = self.measure_streamline_coherence()\n    # ...\n    return {\n        'laminar_quality': reynolds_quantum < self.critical_reynolds,\n        # ...\n    }"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tipo": "seccion",
-      "titulo": "Análisis Detallado de la Ecuación Maestra",
-      "contenido": [
-        {
-          "tipo": "parrafo",
-          "texto": "La Ecuación Maestra Topológico-Evolutiva describe la evolución de la densidad de probabilidad p(r,t) en el espacio (r) y el tiempo (t) considerando varios factores influyentes."
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Papel Principal de Cada Componente",
-          "contenido": [
-            {
-              "tipo": "lista",
-              "items": [
-                "Tensor de Difusión Adaptativo (D): Su papel principal es dispersar la densidad de probabilidad, haciéndola extenderse y aplanarse. El término \"Adaptativo\" indica que la tasa de difusión cambia basándose en el gradiente local de la densidad, permitiendo una difusión más rápida o lenta en diferentes regiones.",
-                "Campo de Velocidad Topológica (v): Representa la advección o transporte. Su papel es mover o desplazar la densidad de probabilidad en una dirección específica definida por el campo de velocidad v, que a su vez es determinado por gradientes de potenciales.",
-                "Término Fuente/Sumidero (S(p, Grad(p))): Actúa como una fuente (creando) o un sumidero (destruyendo) densidad de probabilidad. Su papel es aumentar o disminuir la masa de probabilidad total o en regiones específicas.",
-                "Forzamiento Topológico (Gamma_topo): Introduce influencias basadas en las propiedades geométricas del espacio subyacente (curvatura). Su papel es canalizar o moldear la densidad de probabilidad de acuerdo con estas características geométricas.",
-                "Ruido Bayesiano (eta_bayes): Representa fluctuaciones aleatorias o estocasticidad. Su papel principal es introducir incertidumbre y variabilidad en el sistema, explicando influencias no modeladas o aleatoriedad inherente."
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Efecto Cualitativo de los Niveles de Influencia",
-          "contenido": [
-            {
-              "tipo": "parrafo",
-              "texto": "Con los niveles de influencia dados (Difusión: 50/100, Advección: 50/100, Fuente/Sumidero: 50/100), se espera una interacción dinámica donde la densidad es simultáneamente transportada y dispersada, con su masa total siendo modificada. Forzamiento Topológico (30/100) tendrá una influencia moderada, canalizando el flujo en base a la geometría sin ser el impulsor principal. El Ruido Bayesiano (20/100) tendrá la menor influencia, agregando fluctuaciones y variabilidad sin cambiar fundamentalmente el comportamiento determinista a gran escala."
-            }
-          ]
-        },
-        {
-          "tipo": "subseccion",
-          "titulo": "Papel de la Distancia de Mahalanobis y la Covarianza",
-          "contenido": [
-            {
-              "tipo": "lista",
-              "items": [
-                "Distancia de Mahalanobis (d_M) en la Difusión Adaptativa (D): Su papel es hacer que la tasa de difusión sea adaptativa a la forma de la propia función de densidad. Permite que la difusión sea más rápida en regiones donde el gradiente de densidad tiene una cierta característica (similar a una referencia μ_ref) y más lenta donde tiene una característica diferente.",
-                "Covarianza (Sigma_M) en el Ruido Bayesiano (eta_bayes): La matriz de covarianza Σ_M define las características del ruido aleatorio. Sus elementos diagonales representan las varianzas (magnitud de las fluctuaciones) y los elementos fuera de la diagonal representan las covarianzas (correlación entre fluctuaciones en diferentes dimensiones). Por lo tanto, Σ_M da forma a las perturbaciones aleatorias aplicadas a p(r,t)."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tipo": "seccion",
-      "titulo": "Conclusiones y Perspectivas",
-      "contenido": "El enfoque de flujo laminar de información ofrece una solución elegante y física a los desafíos numéricos de la teoría PGP. Sus ventajas en estabilidad, eficiencia y preservación de propiedades físicas lo hacen prometedor para simular la formación de estructuras cósmicas, procesos de decoherencia, transiciones de fase en el vacío cuántico y fenómenos de lente gravitacional cuántica."
+% --- METADATOS DEL DOCUMENTO ---
+\title{Postulado de la Polaridad Gravitacional Probabilística con Análisis Topológico-Evolutivo}
+\author{Jacobo Tlacaelel Mina Rodríguez}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maketitle
+
+\begin{abstract}
+Se postula la Polaridad Gravitacional Probabilística. En la frontera de la física, nos encontramos hoy ante un enigma profundo: ¿Cómo unificamos la mecánica cuántica que rige lo infinitamente pequeño con la gravedad que moldea el cosmos? Pero antes de eso, ¿qué es la masa? Las teorías actuales nos han llevado lejos, pero persisten las fisuras, los ruidos y las anomalías que señalan hacia una comprensión incompleta de la realidad. Se propone una reinterpretación radical, aunque dentro de un mismo marco: el universo no se construye sobre partículas fundamentales estáticas, sino sobre algo que identificamos como repulsión-vibración persistente a una velocidad inimaginable, que interpretamos como cuerdas, excitaciones, cuasi-partículas. Esta no es una fuerza en el sentido clásico, sino la dinámica primordial que llena el vacío cuántico, dándole una cualidad que llamamos despolarización. Este vacío no es inerte; es un medio vibrante, adaptable y extraordinariamente rico que, al influenciarse y masificar su frecuencia, entra en una cohesión despolarizada, estando en la misma frecuencia de onda. Al sumar excitaciones y actuar de manera coherente, logran una interacción con el campo de Higgs, compactando en una masa efectiva en un punto particular, lo que conocemos como onda-partícula. La polarización como onda toma en cuenta el conjunto de excitaciones, y la partícula es la suma total en un punto, dando origen a lo que identificamos como un electrón. Cuando en un qubit (visto como un electrón) se aplica el estado de Bell o una puerta H (Hadamard), se sabe que lo coloca en superposición y distribuye el Hamiltoniano en un ideal 50\%-50\% para 0 y 1. Sin embargo, se atribuye al ruido una asimetría que distorsiona la pureza. Este postulado interpreta esta asimetría como una distribución gravitacional ejercida sobre el Hamiltoniano, ya que sabiendo que el Hamiltoniano representa la Energía y \(E=mc^2\), estamos ante el proceso de transformación energía-materia. La distribución de la masa está regida por un centro de gravedad, análogo a un imán que al dividirse, su polaridad se distribuye en cada parte: un cuerpo se divide y mantiene su polaridad Masa-Gravedad (M-G) donde la distribución se inclina hacia un estado de mínimo gasto de energía osea que a mayor masa, mayor alcance de rango en el umbral gravitacional. Esto se observa desde un átomo de hidrógeno hasta un agujero negro, entendiendo la curva como una distorsión de probabilidad determinada en un umbral polarizado, donde la segunda ley de la termodinámica se reinterpreta en términos de umbrales polarizados. El ejemplo de la Supernova Refsdal, con sus imágenes múltiples y retardadas, se presenta como evidencia de cómo el tejido probabilístico polarizado del vacío reconfigura las trayectorias de la luz, actuando como una "lente de probabilidad" cósmica siempre visto desde una perspectiva local. La persistencia de esta polaridad sugiere una ley subyacente que rige la emergencia y distribución de la masa-gravedad sometiéndose a sus interpretaciones locales. Se propone un cambio de paradigma: la realidad fundamental es una danza de polarizaciones y despolarizaciones, un flujo constante de información. La estabilidad de un átomo, la trayectoria de una galaxia o el destino del universo podrían ser el eco coherente de la eterna repulsión-vibración del vacío, manifestándose como una asimetría natural, permisiva, la polaridad fundamental que rige todo.
+\end{abstract}
+
+\section{Introducción a la Teoría de la Polaridad Gravitacional Cuántica}
+
+La física contemporánea se enfrenta a desafíos fundamentales en la unificación de la mecánica cuántica con la relatividad general, y en la comprensión de la naturaleza de la masa. La \textbf{Teoría de la Polaridad Gravitacional Cuántica} (PGP) postula una reinterpretación radical de las leyes físicas fundamentales, partiendo de un concepto primordial: una \textit{"repulsión persistente a una velocidad inimaginable"}.
+
+Esta dinámica subyacente no es una fuerza clásica, sino el origen activo de \textit{"excitaciones"} y \textit{"cuerdas"} que, a su vez, dan lugar a la polarización (Distribución dinámica) y la despolarización (localización, partículas) de la realidad.
+
+\subsection{Formalismo de la Polarización Cuántico-Gravitacional}
+
+En este marco, la curvatura clásica del espacio-tiempo es sustituida por una \textbf{distorsión polarizada}, controlada por un \textbf{parámetro cuántico-gravitacional fundamental}. Hemos formalizado cómo las propiedades de permitividad \((\varepsilon)\) y permeabilidad \((\mu)\) del vacío se convierten en \textbf{tensores dinámicos} que reflejan esta polarización intrínseca del éter cuántico.
+
+De hecho, la permeabilidad magnética \(\mu(\vb{r})\) se postula como una función espacial gaussiana, cuya forma y amplitud están moduladas por la \textit{"respuesta G del vacío"} y el \textbf{Parámetro de Masa-Gravedad (PMG)}. Este parámetro, que conceptualizamos como un campo vectorial (\textbf{PMG}), emerge de la susceptibilidad del vacío y los gradientes del índice de refracción efectivo \(n(\vb{r})\), vinculando la polarización espacial del vacío con la emergencia de propiedades gravitacionales.
+
+\section{Fundamentos de la Polaridad Gravitacional Probabilística (PGP)}
+La PGP se fundamenta en la repulsión-vibración persistente como la dinámica primordial que da forma a la realidad.
+\begin{itemize}
+    \item \(M_{\text{repul}}(\vb{r})\) es la función de repulsión espacial.
+    \item \(E_0 = mc^2\) conecta directamente con la equivalencia masa-energía.
+\end{itemize}
+
+\subsection{Vacío Cuántico como Medio Vibrante}
+El vacío no es inerte, sino un medio vibrante, adaptable y extraordinariamente rico con cualidades de "despolarización".
+
+\subsubsection{Susceptibilidad Vibratoria del Vacío}
+\begin{equation}
+\chi_{\text{vib}}(\vb{r}) = \chi_0 \left(1 + \sum_n A_n \cos(\omega_n t + \phi_n)\right)
+\end{equation}
+
+\subsubsection{Campo de Respuesta Vibratoria}
+\begin{equation}
+G_{\text{vib}}(\vb{r}) = G_0 \cdot \mathcal{R}_{\text{vib}}(\vb{r},t) \cdot \exp\left(-\frac{\abs{\vb{r}}^2}{2\sigma_{\text{vib}}^2}\right)
+\end{equation}
+
+\subsection{Coherencia Despolarizada y Masificación}
+Cuando las excitaciones influencian y masifican su frecuencia, entran en cohesión despolarizada - misma frecuencia de onda.
+
+\subsubsection{Condición de Coherencia Despolarizada}
+\begin{equation}
+\omega_{\text{exc},i} = \omega_{\text{exc},j} = \omega_{\text{coherente}} \quad \forall i,j
+\end{equation}
+
+\subsubsection{Función de Masificación por Coherencia}
+\begin{equation}
+m_{\text{eff}}(\vb{r}) = \frac{\hbar\omega_{\text{coherente}}}{c^2} \cdot \abs{\Psi_{\text{coherente}}(\vb{r})}^2
+\end{equation}
+Esta es la materialización directa de \(E=mc^2\) donde:
+\begin{itemize}
+    \item \(E = \hbar\omega_{\text{coherente}}\) (energía de las vibraciones coherentes).
+    \item \(m_{\text{eff}}\) es la masa efectiva emergente.
+    \item \(c^2\) es el factor de conversión energía-masa.
+\end{itemize}
+
+\subsection{Interacción con el Campo de Higgs}
+La masificación coherente interactúa con el Campo de Higgs para compactar la masa en un punto, creando la dualidad onda-partícula que observamos.
+
+\section{Ecuación Maestra Topológico-Evolutiva}
+La evolución de la densidad de probabilidad \(\rho(\vb{r},t)\) de las excitaciones del sistema se describe mediante una ecuación maestra generalizada, que integra difusión, transporte, fuentes/sumideros, forzamiento topológico y ruido estocástico. Esta ecuación es el núcleo dinámico que rige la interacción de las "excitaciones" con el vacío polarizable y sus propiedades topológicas inherentes.
+\begin{equation}
+\frac{\partial\rho}{\partial t} = \nabla\cdot(\vb{D}\nabla\rho) - \nabla\cdot(\rho\vb{v}) + S(\rho,\nabla\rho) + \Gamma_{\text{topo}}(H,\chi_E,K_{\text{gauss}}) + \eta_{\text{bayes}}
+\end{equation}
+
+\subsubsection*{Componentes de la Ecuación Maestra}
+\begin{align}   
+[leftmargin=!, labelwidth=\widthof{\textbf{Forzamiento Topológico}}]
+    \item[\textbf{Tensor de Difusión Adaptativo (\(\vb{D}\))}] Un tensor de difusión que no es constante, sino que se adapta localmente en función de la distancia de Mahalanobis de la densidad de probabilidad a una referencia, permitiendo que la difusión varíe en regiones de interés topológico o gravitacional.
+    \[ \vb{D} = D_0 + \alpha\exp(-\sigma^2d_M^2(\nabla\rho, \bm{\mu}_{\text{ref}})) \]
+    \par\nopagebreak\small }\textit{Parámetros:} \(D_0\) es un coeficiente de difusión base, \(\alpha\) es un factor de modulación, \(\nabla\rho\) es el gradiente de la densidad de probabilidad, \(\bm{\mu}_{\text{ref}}\) es un vector de referencia que define la región de interés o un estado de polarización deseado, y \(\sigma\) es un parámetro de escala.
+
+    \item[\textbf{Campo de Velocidad Topológica (\(\vb{v}\))}] Describe el flujo de la densidad de probabilidad a través del espacio-tiempo, influenciado por potenciales escalares y topológicos.
+    \[ \vb{v} = -\nabla(\phi+\psi_{\text{topo}}) \]
+    \par\nopagebreak\small \textit{Parámetros:} \(\phi\) es un potencial escalar genérico (e.g., relacionado con \(U_{\text{MG}}\)) y \(\psi_{\text{topo}}\) es un potencial que emerge de las propiedades topológicas del espacio-tiempo.
+   \textbf{Término Fuente/Sumidero ($S(\rho,\nabla\rho)$):} Este término describe los procesos locales de generación o eliminación de cuantas de polaridad (excitaciones), que pueden ser influenciados por la densidad y sus gradientes. La forma explícita del término depende de los procesos específicos de intermasificación o despolarización.
+    {\textbf Forzamiento Topológico\d(\(\Gamma_{\text{topo}}\))}] Un término que introduce una influencia directa de las propiedades geométricas y topológicas del espacio en la evolución de la densidad de probabilidad.
+    \[ \Gamma_{\text{topo}}(H,\chi_E) = \beta_1\Delta H + \beta_2\Delta\chi_E + \beta_3 K_{\text{gauss}} \]
+    \par\nopagebreak\small \textit{Parámetros:} \(H\) es la Curvatura Media, \(\chi_E\) es la Característica de Euler-Poincaré, y \(K_{\text{gauss}}\) es la Curvatura Gaussiana. \(\beta_1, \beta_2, \beta_3\) son los pesos de forzamiento topológico.
+    
+    \item[\textbf{Ruido Bayesiano (\(\eta_{\text{bayes}}\))}] Un término estocástico que modela las fluctuaciones inherentes del vacío cuántico y las incertidumbres en la observación, siguiendo una distribución normal multivariada.
+    \[ \eta_{\text{bayes}} \sim \mathcal{N}(0, \Sigma_M^{-1}) \]
+    \par\nopagebreak\small \textit{Parámetros:} \(\Sigma_M\) es la matriz de covarianza de la distancia de Mahalanobis.
+
+    \item[\textbf{Distancia de Mahalanobis (\(d_M^2\))}] Una medida de distancia que tiene en cuenta la covarianza de los datos, utilizada aquí para evaluar la similitud entre estados de polarización o densidades de probabilidad.
+    \[ d_M^2(\vb{x}, \bm{\mu}) = (\vb{x} - \bm{\mu})^{\top}\Sigma^{-1}(\vb{x} - \bm{\mu}) \]
+    \par\nopagebreak\small \textit{Parámetros:} \(\vb{x}\) es un vector de observación, \(\bm{\mu}\) es el vector de la media de referencia, y \(\Sigma\) es la matriz de covarianza.
+\end{description}
+
+\section{Lagrangiano Integrado de la PGP-Topológica}
+El Lagrangiano de densidad total \(\mathcal{L}_{\text{total}}\) es la función fundamental de la cual se derivan las ecuaciones de campo y la dinámica conservativa del sistema a través del Principio de Mínima Acción.
+\begin{equation}
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{PGP}} + \mathcal{L}_{\text{topo}} + \mathcal{L}_{\text{bayes}} + \mathcal{L}_{\text{mahal}}
+\end{equation}
+
+\subsubsection*{Componentes del Lagrangiano}
+\begin{description}[leftmargin=!, labelwidth=\widthof{\textbf{Acoplamiento de Mahalanobis}}]
+    \item[\textbf{Lagrangiano Base PGP (\(\mathcal{L}_{\text{PGP}}\))}] Comprende los términos fundamentales de la teoría de la Polaridad Gravitacional Cuántica.
+        \begin{description}[style=multiline, leftmargin=2em]
+            \item[\textit{\(\mathcal{L}_{\text{partícula/excitación}}\)}] Describe la dinámica de las excitaciones/partículas (\(\Psi\)), incluyendo la masa emergente dependiente de los campos del vacío.
+            \[ \mathcal{L}_{\text{partícula/excitación}} = (\partial_\mu\Psi^*) \left(\frac{1}{\Lambda^2\chi G_v}\right) (\partial^\mu\Psi) - U_{\text{MG}}\abs{\Psi}^2 - \dots \]
+            \item[\textit{\(\mathcal{L}_{\text{vacío}}\)}] Describe la dinámica intrínseca de los campos fundamentales del vacío polarizable: \(\chi(\vb{r})\), \(G_v(\vb{r})\), y \(B_{\text{eff}}(\vb{r})\).
+            \[ \mathcal{L}_\chi = \frac{1}{2}(\partial_\mu\chi)(\partial^\mu\chi) - V(\chi, G_v, \dots) \]
+            \item[\textit{\(\mathcal{L}_{\text{EM}}\)}] Formaliza la dinámica de los campos electromagnéticos, donde las propiedades del medio (\(\varepsilon(\vb{r},t)\) y \(\mu(\vb{r},t)\)) son campos dinámicos acoplados al vacío.
+            \[ \mathcal{L}_{\text{EM}} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} - J^\mu A_\mu + \mathcal{L}_{\text{medio-interacción}} \]
+            \item[\textit{\(\mathcal{L}_{\text{acoplamiento}}\)}] Contiene los términos que describen cómo los campos interactúan para generar la emergencia de masa y otras propiedades.
+            \[ -\frac{1}{2}(\Lambda^2\chi G_v)\abs{\Psi}^2 \]
+        \end{description}
+
+    \item[\textbf{Término Topológico (\(\mathcal{L}_{\text{topo}}\))}] Acopla la dinámica de los campos del vacío con las propiedades topológicas y geométricas del espacio.
+    \[ \mathcal{L}_{\text{topo}} = \frac{1}{2}\gamma_1(\nabla H)^2 + \frac{1}{2}\gamma_2(\nabla\chi_E)^2 + V_{\text{topo}}(H,\chi_E,K_{\text{gauss}}) \]
+
+    \item[\textbf{Término Bayesiano (\(\mathcal{L}_{\text{bayes}}\))}] Incorpora una penalización basada en la verosimilitud de las desviaciones de los campos o parámetros del sistema respecto a sus valores esperados.
+    \[ \mathcal{L}_{\text{bayes}} = -\frac{1}{2}\log\abs{\Sigma_M} - \frac{1}{2}(\bm{\phi} - \bm{\mu})^{\top}\Sigma_M^{-1}(\bm{\phi} - \bm{\mu}) \]
+
+    \item[\textbf{Acoplamiento de Mahalanobis (\(\mathcal{L}_{\text{mahal}}\))}] Un término que directamente penaliza (o favorece) las desviaciones de los datos o estados del sistema con respecto a un modelo o una referencia.
+    \[ \mathcal{L}_{\text{mahal}} = -\lambda_{\text{mahal}}\sum_i d_M^2(\vb{y}_i, f(\vb{x}_i; \bm{\theta})) \]
+\end{description}
+
+\section{Funciones y Conceptos Fundamentales}
+
+\subsection{La Función de Onda Gaussiana}
+La función Gaussiana unidimensional se define como:
+\begin{equation} \label{eq:gaussiana1D}
+f(x) = A \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)
+\end{equation}
+\textit{Parámetros:} \(A\) representa la amplitud, \(\mu\) indica la media (o el centro), y \(\sigma\) designa la desviación estándar.
+
+La Gaussiana bidimensional (circular) se usa para describir distribuciones de intensidad en una superficie:
+\begin{equation} \label{eq:gaussiana2D}
+G(x, y) = A \exp\left(-\frac{(x - \mu_x)^2 + (y - \mu_y)^2}{2\sigma^2}\right)
+\end{equation}
+\textit{Parámetros:} \((\mu_x, \mu_y)\) es el centro del pico y \(\sigma\) controla el ancho en ambas dimensiones.
+
+\subsection{Superposición de un Estado en una Base Ortonormal}
+En la mecánica cuántica, un estado arbitrario \(\ket{\psi}\) puede ser expresado como una superposición lineal de los vectores de una base ortonormal completa \(\{\ket{u_j}\}\):
+\begin{equation} \label{eq:superposicion_general}
+\ket{\psi} = \sum_{j} c_j \ket{u_j}
+\end{equation}
+\textit{Parámetros:} \(c_j = \braket{u_j}{\psi}\) son los coeficientes de amplitud complejos. La probabilidad de medir el resultado asociado a \(\ket{u_j}\) es \(P(u_j) = |c_j|^2\).
+
+\subsubsection{Ejemplo: Superposición de un Qubit}
+Un qubit en un estado genérico \(\ket{\psi}\) en la base computacional \(\{\ket{0}, \ket{1}\}\) se escribe como:
+\begin{equation} \label{eq:qubit_superposicion}
+\ket{\psi} = \alpha \ket{0} + \beta \ket{1}
+\end{equation}
+donde \(|\alpha|^2 + |\beta|^2 = 1\).
+
+\subsection{Permitividad y Permeabilidad: Propiedades del Espacio-Medio}
+La permitividad eléctrica (\(\varepsilon\)) y la permeabilidad magnética (\(\mu\)) describen cómo un medio interactúa con los campos eléctricos y magnéticos. En el vacío, sus valores son \(\varepsilon_0\) y \(\mu_0\). La velocidad de una onda electromagnética en un medio es \(v = 1/\sqrt{\mu\varepsilon}\). En el vacío, esta velocidad es la velocidad de la luz, \(c = 1/\sqrt{\mu_0\varepsilon_0}\).
+
+\subsection{Modelo de Kuramoto: Sincronización y Coherencia en Excitaciones}
+El Modelo de Kuramoto describe cómo una población de \(N\) osciladores acoplados puede sincronizarse. La evolución de la fase \(\theta_i\) de cada oscilador es:
+\begin{equation} \label{eq:kuramoto_main}
+\frac{d\theta_i}{dt} = \omega_i + \frac{K}{N} \sum_{j=1}^{N} \sin(\theta_j - \theta_i)
+\end{equation}
+\textit{Parámetros:} \(\omega_i\) es su frecuencia natural y \(K\) es la fuerza de acoplamiento. El grado de sincronización se mide con el parámetro de orden \(r(t)e^{i\Psi(t)} = (1/N) \sum e^{i\theta_j(t)}\).
+
+\subsection{Ecuación de Continuidad y Potencial Cuántico}
+En la formulación hidrodinámica de la mecánica cuántica, la ecuación de Schrödinger se descompone en una ecuación de continuidad para la densidad de probabilidad \(\rho = |\Psi|^2\):
+\begin{equation} \label{eq:continuity_quantum}
+\frac{\partial \rho}{\partial t} + \nabla \cdot \vb{J} = 0
+\end{equation}
+y una ecuación de Euler cuántica que describe el flujo de un "fluido de probabilidad", gobernado por el potencial clásico \(V\) y un Potencial Cuántico \(Q\):
+\begin{equation} \label{eq:quantum_potential}
+Q(\vb{r}, t) = -\frac{\hbar^2}{2m} \frac{\nabla^2 A}{A}
+\end{equation}
+donde \(A\) es la amplitud de la función de onda \(\Psi = A e^{iS/\hbar}\).
+
+\section{Modelado de la Polarización en el Marco PGP}
+
+\subsection{Adaptación de las Ecuaciones de Maxwell}
+Postulamos que \(\varepsilon\) y \(\mu\) no son escalares, sino tensores de segundo rango \(\bm{\varepsilon}(\vb{r},t)\) y \(\bm{\mu}(\vb{r},t)\), que dependen de la polarización del vacío. Las relaciones constitutivas se vuelven \(\vb{D} = \bm{\varepsilon} \cdot \vb{E}\) y \(\vb{H} = \bm{\mu}^{-1} \cdot \vb{B}\). Las ecuaciones de Maxwell en su forma general se mantienen:
+\begin{align}
+\nabla \cdot \vb{D} &= \rho_f \label{eq:maxwell_gauss_E} \\
+\nabla \cdot \vb{B} &= 0 \label{eq:maxwell_gauss_B} \\
+\nabla \times \vb{E} &= - \frac{\partial \vb{B}}{\partial t} \label{eq:maxwell_faraday} \\
+\nabla \times \vb{H} &= \vb{J}_f + \frac{\partial \vb{D}}{\partial t} \label{eq:maxwell_ampere}
+\end{align}
+
+\subsection{Ecuación de Ginzburg-Landau para la Transición de Polarización}
+Para modelar la emergencia de la polarización, usamos un parámetro de orden complejo \(\Psi(\vb{r},t)\) cuya evolución sigue la ecuación de Ginzburg-Landau:
+\begin{equation} \label{eq:ginzburg_landau}
+\pdv{\Psi}{t} = \alpha \Psi - \beta \abs{\Psi}^2 \Psi + D \nabla^2 \Psi
+\end{equation}
+Cuando el coeficiente \(\alpha\) se vuelve positivo, el estado desordenado (\(\Psi=0\)) se vuelve inestable, dando lugar a un estado polarizado (\(\Psi \neq 0\)).
+
+\subsection{Tiempo de Recorrido de la Luz en un Vacío Polarizable}
+El tiempo de recorrido \(T_L\) de la luz a lo largo de un camino \(L\) en un vacío con un índice de refracción efectivo \(n(\vb{r})\) es:
+\begin{equation} \label{eq:light_travel_time}
+T_L = \int_{L} \frac{n(\vb{r})}{c} ds
+\end{equation}
+
+\subsection{Evolución de la Polarización de la Luz}
+El cambio en una propiedad de polarización de la luz, \(\Delta_{\text{pol}}\), depende de un parámetro de masa-gravedad \(P_{\text{MG}}(\vb{r})\) a lo largo del camino:
+\begin{equation} \label{eq:polarization_evolution}
+\Delta_{\text{pol}} = \Delta_0 + \int_{L} f(P_{\text{MG}}(\vb{r})) ds
+\end{equation}
+
+\subsection{Parámetro de Masa-Gravedad y Potencial Efectivo}
+Definimos un Parámetro de Masa-Gravedad \(P_{\text{MG}}\) que emerge de los gradientes en la polarización del vacío (representada por \(n(\vb{r})\)):
+\begin{equation} \label{eq:pmg_definition}
+\vb{P}_{\text{MG}}(\vb{r}) = \chi(\vb{r}) \cdot \hat{\vb{n}}(\vb{r}) = \chi(\vb{r}) \frac{\nabla n(\vb{r})}{\abs{\nabla n(\vb{r})}}
+\end{equation}
+Este parámetro interactúa con un campo efectivo \(\vb{B}_{\text{eff}}(\vb{r})\) para generar un Potencial Efectivo de Masa-Gravedad \(U_{\text{MG}}\):
+\begin{equation} \label{eq:umg_definition}
+U_{\text{MG}}(\vb{r}) = \vb{P}_{\text{MG}}(\vb{r}) \cdot \vb{B}_{\text{eff}}(\vb{r})
+\end{equation}
+
+\section{Método Numérico de Flujo Laminar de Información para la Teoría PGP}
+
+\subsection{Conceptualización del Flujo Laminar de Información}
+\subsubsection{Analogía Física Fundamental}
+En mecánica de fluidos, un flujo laminar se caracteriza por capas ordenadas que se deslizan sin mezclarse, gradientes suaves y conservación de momentum. En PGP, mapeamos esto a capas de información cuántica con diferentes niveles de coherencia y gradientes suaves en los campos del vacío.
+
+\subsection{Implementación del Método de Flujo Laminar}
+
+\subsubsection{Discretización Espacial Adaptativa Inspirada en CFD}
+\begin{lstlisting}[language=Python, caption={Pseudocódigo conceptual para el refinamiento de malla.}, label={code:laminar_flow_mesh}]
+class LaminarInfoFlow:
+    def __init__(self):
+        self.layers = self.initialize_info_layers()
+        self.streamlines = self.define_quantum_streamlines()
+        self.viscosity_tensor = self.compute_quantum_viscosity()
+
+    def adaptive_mesh_refinement(self, field_gradients):
+        """Refinamiento adaptativo basado en gradientes."""
+        high_gradient_regions = self.detect_sharp_transitions(field_gradients)
+        return self.refine_mesh(high_gradient_regions)
+\end{lstlisting}
+
+\subsubsection{Integración Temporal Cuántica con Dinámica de Fluidos}
+\paragraph{Ecuación de Navier-Stokes Cuántica Modificada}
+\begin{equation}
+\frac{\partial\psi}{\partial t} + (\vb{v}_{\text{quantum}} \cdot \nabla)\psi = -
+    \left(\frac{i}{\hbar}\right)\hat{H}_{\text{eff}} \psi + \nu_{\text{quantum}} \nabla^2\psi + S_{\text{lindblad}}
+\end{equation}
+\textit{Parámetros:} \(\vb{v}_{\text{quantum}}\) es la velocidad del flujo de información, \(\nu_{\text{quantum}}\) es la viscosidad cuántica y \(S_{\text{lindblad}}\) es el término de decoherencia.
+
+\begin{lstlisting}[language=Python, caption={Esquema de Integración IMEX (Implícito-Explícito).}, label={code:imex}]
+def integrate_quantum_flow(self, dt):
+    """Integrador IMEX para flujo laminar cuántico."""
+    # Paso explícito para evolución unitaria
+    psi_intermediate = self.evolve_hamiltonian_explicit(dt)
+    # Paso implícito para decoherencia Lindblad
+    psi_new = self.evolve_lindblad_implicit(psi_intermediate, dt)
+    return self.apply_flow_constraints(psi_new)
+\end{lstlisting}
+
+\subsubsection{Algoritmos Bayesianos con Dinámicas de Flujo}
+\begin{lstlisting}[language=Python, caption={Filtro de Partículas con Flujo Laminar.}, label={code:particle_filter}]
+class QuantumFlowParticleFilter:
+    def predict_step(self, dt):
+        """Propagación de partículas siguiendo líneas de corriente."""
+        for particle in self.particles:
+            particle.state = self.advect_along_streamline(particle.state, dt)
+            particle.weight *= self.compute_flow_likelihood(particle.state)
+
+    def update_step(self, observations):
+        """Actualización bayesiana manteniendo continuidad del flujo."""
+        likelihoods = self.compute_observation_likelihoods(observations)
+        self.streamline_weights *= likelihoods
+        self.resample_if_needed()
+\end{lstlisting}
+
+\subsubsection{Optimización con Dinámica de Fluidos}
+\begin{lstlisting}[language=Python, caption={Gradiente Descendente Guiado por Flujo.}, label={code:flow_opt}]
+def flow_guided_optimization(self, action_functional):
+    """Optimización que sigue líneas de menor resistencia."""
+    current_state = self.initial_guess
+    flow_velocity = self.compute_optimization_flow(current_state)
+    while not self.converged():
+        classical_gradient = self.compute_gradient(...)
+        flow_correction = self.apply_streamline_dynamics(...)
+        current_state = self.update_with_flow_stability(...)
+        flow_velocity = self.evolve_flow_velocity(...)
+\end{lstlisting}
+
+\subsubsection{FFT Adaptada al Flujo Laminar}
+\begin{lstlisting}[language=Python, caption={Transformada de Fourier en Coordenadas de Flujo.}, label={code:flow_fft}]
+def flow_adapted_fft(self, field_data, streamline_coords):
+    """FFT que respeta la geometría de las líneas de corriente."""
+    flow_coords = self.map_to_streamline_coordinates(streamline_coords)
+    fourier_flow = np.fft.fftn(field_data, axes=flow_coords)
+    spectral_patterns = self.analyze_flow_patterns(fourier_flow)
+    return self.extract_masification_signatures(spectral_patterns)
+\end{lstlisting}
+
+\subsection{Ventajas del Enfoque de Flujo Laminar}
+\begin{enumerate}
+    \item \textbf{Estabilidad Numérica Natural:} Condición CFL automática, disipación controlada y conservación de invariantes.
+    \item \textbf{Eficiencia Computacional:} Paralelización natural, adaptatividad automática y convergencia acelerada.
+    \item \textbf{Preservación de Propiedades Físicas:} Causalidad, unitariedad y localidad se preservan por construcción.
+\end{enumerate}
+
+\subsection{Implementación Práctica Específica para PGP}
+
+\subsubsection{Algoritmo Principal en Python}
+\begin{lstlisting}[language=Python, caption={Clase principal para el solver PGP.}, label={code:pgp_solver}]
+class PGPFluidSolver:
+    def __init__(self, domain, initial_conditions):
+        self.domain = domain
+        self.psi_field = initial_conditions['wavefunction']
+        # ... inicializar otros campos
+
+    def evolve_system(self, t_final, dt):
+        """Evolución completa del sistema PGP con flujo laminar."""
+        t = 0
+        while t < t_final:
+            # 1. Actualizar campos de flujo
+            self.update_flow_velocity()
+            # 2. Evolución hamiltoniana siguiendo líneas de corriente
+            self.evolve_hamiltonian_along_streamlines(dt)
+            # 3. Aplicar decoherencia
+            self.apply_lindblad_with_flow_conservation(dt)
+            # 4. Actualizar campos auxiliares
+            self.update_auxiliary_fields(dt)
+            # 5. Refinar malla si es necesario
+            if self.needs_refinement():
+                self.refine_mesh_following_flow()
+            t += dt
+        return self.extract_physical_quantities()
+\end{lstlisting}
+
+\subsubsection{Métricas de Calidad del Flujo}
+\begin{lstlisting}[language=Python, caption={Cálculo de métricas de calidad del flujo.}, label={code:flow_metrics}]
+def compute_flow_quality_metrics(self):
+    ""Métricas para validar la calidad del flujo laminar.""
+    reynolds_quantum = self.compute_quantum_reynolds_number()
+    streamline_coherence = self.measure_streamline_coherence()
+    # ...
+    return {
+        'laminar_quality': reynolds_quantum < self.critical_reynolds,
+        # ...
     }
-  ],
-  "fuentes": [
-    "ugr.es",
-    "uam.mx",
-    "wikipedia.org",
-    "unam.mx",
-    "uclm.es",
-    "flashcards.world",
-    "uva.es",
-    "sld.cu",
-    "uba.ar",
-    "smm.org.mx",
-    "unal.edu.co"
-  ]
-}
-\subsection{Introducción a la Teoría de la Polaridad Gravitacional Cuántica}
+\end{lstlisting}
+\section{Análisis Detallado de la Ecuación Maestra}
+La Ecuación Maestra Topológico-Evolutiva describe la evolución de la densidad de probabilidad \(p(\vb{r},t)\) en el espacio (\(\vb{r}\)) y el tiempo (\(t\)) considerando varios factores influyentes.
 
-La física contemporánea se enfrenta a desafíos fundamentales en la unificación de la mecánica cuántica con la relatividad general, y en la comprensión de la naturaleza de la masa. La \textbf{Teoría de la Polaridad Gravitacional Cuántica} del \href{https://github.com/cuadrante-coremind}{cuadrante-coremind} postula una reinterpretación radical de las leyes físicas fundamentales, partiendo de un concepto primordial: una \textit{"repulsión persistente a una velocidad inimaginable"}.
+\subsection{Papel Principal de Cada Componente}
+\begin{itemize}
+    \item \textbf{Tensor de Difusión Adaptativo (\(\vb{D}\)):} Su papel principal es dispersar la densidad de probabilidad, haciéndola extenderse y aplanarse. El término "Adaptativo" indica que la tasa de difusión cambia basándose en el gradiente local de la densidad, permitiendo una difusión más rápida o lenta en diferentes regiones.
+    \item \textbf{Campo de Velocidad Topológica (\(\vb{v}\)):} Representa la advección o transporte. Su papel es mover o desplazar la densidad de probabilidad en una dirección específica definida por el campo de velocidad \(\vb{v}\), que a su vez es determinado por gradientes de potenciales.
+    \item \textbf{Término Fuente/Sumidero (\(S(p, \nabla p)\)):} Actúa como una fuente (creando) o un sumidero (destruyendo) densidad de probabilidad. Su papel es aumentar o disminuir la masa de probabilidad total o en regiones específicas.
+    \item \textbf{Forzamiento Topológico (\(\Gamma_{\text{topo}}\)):} Introduce influencias basadas en las propiedades geométricas del espacio subyacente (curvatura). Su papel es canalizar o moldear la densidad de probabilidad de acuerdo con estas características geométricas.
+    \item \textbf{Ruido Bayesiano (\(\eta_{\text{bayes}}\)):} Representa fluctuaciones aleatorias o estocasticidad. Su papel principal es introducir incertidumbre y variabilidad en el sistema, explicando influencias no modeladas o aleatoriedad inherente.
+\end{itemize}
 
-Esta dinámica subyacente no es una fuerza clásica, sino el origen activo de \textit{"excitaciones"} y \textit{"cuerdas"} que, a su vez, dan lugar a la polarización (estados coherentes, ondulatorios) y la despolarización (localización, partículas) de la realidad.
+\subsection{Efecto Cualitativo de los Niveles de Influencia}
+Con los niveles de influencia dados (Difusión: 50/100, Advección: 50/100, Fuente/Sumidero: 50/100), se espera una interacción dinámica donde la densidad es simultáneamente transportada y dispersada, con su masa total siendo modificada. Forzamiento Topológico (30/100) tendrá una influencia moderada, canalizando el flujo en base a la geometría sin ser el impulsor principal. El Ruido Bayesiano (20/100) tendrá la menor influencia, agregando fluctuaciones y variabilidad sin cambiar fundamentalmente el comportamiento determinista a gran escala.
 
-\subsubsection{Formalismo de la Polarización Cuántico-Gravitacional}
+\subsection{Papel de la Distancia de Mahalanobis y la Covarianza}
+\begin{itemize}
+    \item \textbf{Distancia de Mahalanobis (\(d_M\)) en la Difusión Adaptativa (\(\vb{D}\)):} Su papel es hacer que la tasa de difusión sea adaptativa a la forma de la propia función de densidad. Permite que la difusión sea más rápida en regiones donde el gradiente de densidad tiene una cierta característica (similar a una referencia \(\bm{\mu}_{\text{ref}}\)) y más lenta donde tiene una característica diferente.
+    \item \textbf{Covarianza (\(\Sigma_M\)) en el Ruido Bayesiano (\(\eta_{\text{bayes}}\)):} La matriz de covarianza \(\Sigma_M\) define las características del ruido aleatorio. Sus elementos diagonales representan las varianzas (magnitud de las fluctuaciones) y los elementos fuera de la diagonal representan las covarianzas (correlación entre fluctuaciones en diferentes dimensiones). Por lo tanto, \(\Sigma_M\) da forma a las perturbaciones aleatorias aplicadas a \(p(\vb{r},t)\).
+\end{itemize}
 
-En este marco, la curvatura clásica del espacio-tiempo es sustituida por una \textbf{distorsión polarizada}, controlada por un \textbf{parámetro cuántico-gravitacional fundamental}. Hemos formalizado cómo las propiedades de 
-permitividad 
-$(ε)$
-y permeabilidad 
-$(μ)$
-del vacío se convierten en \textbf{tensores dinámicos} que reflejan esta polarización intrínseca del éter cuántico.
+\section{Conclusiones y Perspectivas}
+El enfoque de flujo laminar de información ofrece una solución elegante y física a los desafíos numéricos de la teoría PGP. Sus ventajas en estabilidad, eficiencia y preservación de propiedades físicas lo hacen prometedor para simular la formación de estructuras cósmicas, procesos de decoherencia, transiciones de fase en el vacío cuántico y fenómenos de lente gravitacional cuántica.
 
-De hecho, la permeabilidad magnética
-$μ(\textbf{r})$ 
-se postula como una función espacial gaussiana, cuya forma y amplitud están moduladas por la
-$\textit{"respuesta G del vacío"}$
-y el 
-$\textbf{Parámetro de Masa-Gravedad (PMG)}$. 
-Este parámetro, que conceptualizamos como un campo vectorial (\textbf{PMG}) emerge de la susceptibilidad del vacío y los gradientes del índice de refracción efectivo $n(\textbf{r})$, vinculando la polarización espacial del vacío con la emergencia de propiedades gravitacionales.
+\section*{Fuentes}
+\begin{itemize}[noitemsep]
+    \item ugr.es
+    \item uam.mx
+    \item wikipedia.org
+    \item unam.mx
+    \item uclm.es
+    \item flashcards.world
+    \item uva.es
+    \item sld.cu
+    \item uba.ar
+    \item smm.org.mx
+    \item unal.edu.co
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
